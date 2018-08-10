@@ -1,0 +1,952 @@
+@import url('base.css');
+/* ..........头部开始.......... */
+header{
+	width: 100%;
+	height: 40px;
+	background: #444;
+}
+header main{
+/* 	width: 1226px; */
+	height: 40px;
+/* 	background: pink; */
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.Advertisement{
+	font-size: 10px;
+	color: #a8a8aa;
+}
+/* ..........头部结束.......... */
+
+
+/* ..........标题栏开始.......... */
+nav{
+	width: 100%;
+	height: 40px;
+	background: #333;
+}
+nav ul{
+/* 	width: 976px; */
+	height: 40px;
+	margin: 0 auto;
+/* 	background: green; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+nav ul li{
+	height: 100%;
+	width: 50px;
+	text-align: center;
+	line-height: 40px;
+}
+nav ul li a{
+	font-size: 1em;
+	color: #fff;
+}
+nav ul li:hover .nav_wenzi{
+	color: #BCBCBC;
+}
+/* ..........标题栏结束.......... */
+
+
+/* ..........主产品开始.......... */
+.main_products,.main_products ul{
+	width: 100%;
+	height: auto;
+/* 	background: pink; */
+}
+.main_products ul li{
+	width: 100%;
+	background: #FAFAFA;
+	margin: 0 auto;
+	margin-bottom: 12px;
+	overflow: hidden;
+	position: relative;
+}
+.main_products ul li a{
+	display: block;
+	width: 100%;
+	height: 580px;
+}
+.iphoneX h1{
+/* 	font-size: 40px; */
+	text-align: center;
+/* 	line-height: 60px; */
+	color: #111;
+/* 	margin-top: 87px; */
+}
+.iphoneX h2{
+	/* font-size: 22px; */
+	text-align: center;
+	/* line-height: 44px; */
+	color: #111;
+	font-weight: normal;	
+}
+.iphoneX_small_box{
+	background: #fafafa;
+	margin: 0 auto;
+}
+.iphoneX_image_box_left{
+	float: left;
+	color: #0070c9;
+}
+.iphoneX_image_box_left:hover{
+	text-decoration: underline;
+}
+.iphoneX_image_box_right{
+	float: right;
+	color: #0070c9;	
+}
+.iphoneX_image_box_right:hover{
+	text-decoration: underline;
+}
+.iphoneX_image_box{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ..........主产品开始.......... */
+
+
+/* --------------------最大屏开始-------------------- */
+@media screen and (min-width:1024px){
+	header main{
+		width: 976px;
+	}
+	nav ul{
+		width: 976px;
+	}
+	.nav1{
+		display: block;
+	}
+	.nav2{
+		display: none;
+	}
+	.iphoneX_image_box{
+	width: 1068px;
+	height: 337px;
+	background: url('../img/iphone_x_large.jpg') no-repeat center;
+	background-size: 1068px 337px;
+	}
+	.MabBook_Pro_image_box{
+	width: 1068px;
+	height: 337px;
+	background: url('../img/macbook_pro_performance_large.jpg') no-repeat bottom;
+	background-size: 1815px 572px;		
+	}
+	.iphoneX h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin-top: 92px;
+	}
+	.iphoneX h2{
+	font-size: 22px;
+	line-height: 44px;	
+	}
+	.iphoneX_image_box_left{
+	font-size: 17px;
+	line-height: 41px;
+	}
+	.iphoneX_image_box_right{
+	font-size: 17px;
+	line-height: 41px;
+	}
+	.iphoneX_small_box{
+	width: 193px;
+	height: 41px;
+	}
+	.list1 ul li{
+	width: 50%;
+	height: 592px;
+	background: pink;
+	float: left;
+	border-right: 6px solid #fff;
+	border-bottom: 12px solid #fff;
+	border-left: 12px solid #fff;
+	box-sizing: border-box;/* 自定义盒子模型 */
+	}
+	.list1 ul li:nth-child(2n){
+	border-left: 6px solid #fff;
+	border-right: 12px solid #fff;
+	}
+	.iphoneX_image_box{
+	bottom: -42px;
+	}
+	.main_products ul li{
+	height: 580px;
+	}
+	.list1 ul li a h1{
+	display: block;
+	margin:  auto;
+	text-align: center;
+	font-size: 16px;
+	line-height: 27px;
+	margin-top: 46px;
+	width: 360px;
+	}
+	.list1 ul li a h1 span{
+	font-size: 28px;
+	}
+
+/* 	.MacBook_Pro_image_box{
+	width: 1068px;
+	height: 337px;
+	background: url('../img/iphone_x_large.jpg') no-repeat center;
+	background-size: 1068px 337px;
+	} */
+	.MacBook_Pro h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin-top: 92px;
+	}
+	.MacBook_Pro h2{
+	font-size: 22px;
+	line-height: 44px;	
+	}
+	.MacBook_Pro_small_box_left{
+	font-size: 17px;
+	line-height: 41px;
+	}
+	.MacBook_Pro_small_box_right{
+	font-size: 17px;
+	line-height: 41px;
+	}
+	.MacBook_Pro_small_box{
+	width: 193px;
+	height: 41px;
+	}
+	.list1_img{
+	width: 100%;
+	height: 100%;
+	background: url('../img/shop_for_college_large.jpg') no-repeat center;
+	}
+
+}
+/* --------------------最大屏结束-------------------- */
+
+
+/* --------------------中间屏开始-------------------- */
+@media screen and (max-width:1024px){
+	header main{
+		padding-right: 22px;
+	}
+	nav ul{
+		padding-left: 22px;
+		padding-right: 22px;
+	}
+	.nav1{
+		display: block;
+	}
+	.nav2{
+		display: none;
+	}
+	.iphoneX h1{
+	font-size: 40px;
+	line-height: 49px;
+	margin-top: 104px;
+	font-weight: 600;
+	}
+	.iphoneX h2{
+	font-size: 20px;
+	line-height: 37px;
+/* 	margin-top: 87px; */	
+	}
+	.iphoneX_image_box{
+	width: 736px;
+	height: 336px;
+	background: url('../img/iphone_x_medium.jpg') no-repeat center;
+	background-size: 736px 336px;
+	}
+	.iphoneX_image_box_left{
+	font-size: 17px;
+	line-height: 41px;
+	}
+	.iphoneX_image_box_right{
+	font-size: 17px;
+	line-height: 41px;
+	}
+	.iphoneX_small_box{
+	width: 193px;
+	height: 41px;
+	}
+	.list1 ul li{
+	width: 50%;
+	height: 592px;
+	background: #FAFAFA;
+	float: left;
+	border-right: 6px solid #fff;
+	border-bottom: 12px solid #fff;
+	border-left: 12px solid #fff;
+	box-sizing: border-box;/* 自定义盒子模型 */
+	}
+	.list1 ul li:nth-child(2n){
+	border-left: 6px solid #fff;
+	border-right: 12px solid #fff;
+	}
+	.iphoneX_image_box{
+	bottom: -43px;
+	}
+	.main_products ul li{
+	height: 569px;
+	}
+	.list1 ul li a h1{
+	display: block;
+	margin:  auto;
+	font-size: 15px;
+	line-height: 27px;
+	margin-top: 46px;
+	width: 300px;
+	}
+	.list1 ul li a h1 span{
+	font-size: 27px;
+	}
+
+
+	.MacBook_Pro h1{
+	font-size: 40px;
+	line-height: 49px;
+	margin-top: 104px;
+	font-weight: 600;
+	}
+	.MacBook_Pro h2{
+	font-size: 20px;
+	line-height: 37px;
+/* 	margin-top: 87px; */	
+	}
+	.MabBook_Pro_image_box{
+	width: 936px;
+	height: 336px;
+	background: url('../img/macbook_pro_performance_medium.jpg') no-repeat bottom;
+	background-size: 1104px 504px;
+	}
+	.MacBook_Pro_small_box_left{
+	font-size: 17px;
+	line-height: 41px;
+	}
+	.MacBook_Pro_small_box_right{
+	font-size: 17px;
+	line-height: 41px;
+	}
+	.MacBook_Pro_small_box{
+	width: 193px;
+	height: 41px;
+	}
+	.MacBook_Pro_image_box{
+	bottom: -43px;
+	}
+	.list1_img{
+	width: 100%;
+	height: 100%;
+	background: url('../img/shop_for_college_medium.jpg') no-repeat center;
+	}						
+}
+/* --------------------中间屏结束-------------------- */
+
+
+/* --------------------小屏幕开始-------------------- */
+@media screen and (max-width:768px){
+	.nav1{
+		display: none;
+	}
+	.nav2{
+		display: block;
+	}
+	.iphoneX h1{
+	font-size: 28px;
+	line-height: 37px;
+	margin-top: 27px;
+	font-weight: 600;
+	}
+	.iphoneX h2{
+	font-size: 16px;
+	line-height: 30px;
+/* 	margin-top: 87px; */	
+	}
+	.iphoneX_image_box{
+	width: 320px;
+	height: 353px;
+	background: url('../img/iphone_x_small.jpg') no-repeat center;
+	background-size: 320px 353px;
+	}
+	.iphoneX_image_box_left{
+	font-size: 17px;
+	line-height: 31px;
+	}
+	.iphoneX_image_box_right{
+	font-size: 17px;
+	line-height: 31px;
+	}
+	.iphoneX_small_box{
+	width: 168px;
+	height: 31px;
+	margin-top: 4px;
+	}
+	.list1 ul li{
+	width: 100%;
+	height: 580px;
+	background: #FAFAFA;
+	border-right: none;
+	border-bottom: 12px solid #fff;
+	border-left: none;
+	}
+	.list1 ul li:nth-child(2n){
+	border-left: none;
+	border-right: none;
+	}
+	.iphoneX_image_box{
+	bottom: -12px;
+	}
+	.main_products ul li{
+	height: 500px;
+	}
+	.list1 ul li a h1{
+	display: block;
+	margin:  auto;
+	font-size: 15px;
+	line-height: 27px;
+	margin-top: 41px;
+	width: 280px;
+	}
+	.list1 ul li a h1 span{
+	font-size: 27px;
+	}
+
+	.MacBook_Pro h1{
+	font-size: 28px;
+	line-height: 37px;
+	margin-top: 27px;
+	font-weight: 600;
+	}
+	.MacBook_Pro h2{
+	font-size: 16px;
+	line-height: 30px;
+/* 	margin-top: 87px; */	
+	}
+	.MabBook_Pro_image_box{
+	width: 433px;
+	height: 353px;
+	background: url('../img/macbook_pro_performance_small.jpg') no-repeat bottom;
+	background-size: 790px 602px;
+	bottom: 25px;
+	}
+	.MacBook_Pro_small_box_left{
+	font-size: 17px;
+	line-height: 31px;
+	}
+	.MacBook_Pro_small_box_right{
+	font-size: 17px;
+	line-height: 31px;
+	}
+	.MacBook_Pro_small_box{
+	width: 168px;
+	height: 31px;
+	margin-top: 4px;
+	}	
+	.list1_img{
+	width: 100%;
+	height: 100%;
+	background: url('../img/shop_for_college_small.jpg') no-repeat center;
+	}					
+}
+/* --------------------小屏幕结束-------------------- */
+.list1,.list1 ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.list1_img{
+	display: block;
+	overflow: hidden;
+}
+.list1 ul li a h1{
+text-align: center;
+color: #111111;
+}
+.list1 ul li a h1 span{
+font-size: 28px;
+color: #111111;
+}
+.MabBook_Pro_image_box{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+.main_products_teshu{
+	color: #FFFFFF;
+}
+.MacBook_Pro h1{
+/* 	font-size: 40px; */
+	text-align: center;
+/* 	line-height: 60px; */
+	color: #fff;
+/* 	margin-top: 87px; */
+}
+.MacBook_Pro h2{
+	/* font-size: 22px; */
+	text-align: center;
+	/* line-height: 44px; */
+	color: #fff;
+	font-weight: normal;	
+}
+.MacBook_Pro_small_box{
+	background: #131218;
+	margin: 0 auto;
+}
+.MacBook_Pro_small_box_left{
+	float: left;
+	color: #FFFFFF;
+}
+.MacBook_Pro_small_box_left:hover{
+	text-decoration: underline;
+}
+.MacBook_Pro_small_box_right{
+	float: right;
+	color: #FFFFFF;	
+}
+.MacBook_Pro_small_box_right:hover{
+	text-decoration: underline;
+}
+.iphoneX_image_box{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+.main_products ul li:nth-child(3){
+	width: 100%;
+	background: #131218;
+	margin: 0 auto;
+	margin-bottom: 12px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+
+
+
+
+.bottom1{
+	background: #f2f2f2;
+}
+.bottom1_big_box{
+	background: #f2f2f2;
+	margin: 0 auto;
+}
+.bottom1_big_box li{
+	background: #f2f2f2;
+	float: left;
+}
+.bottom1_big_box li h1{
+	display: block;
+	background: #f2f2f2;
+}
+.bottom1_big_box li a{
+	display: block;
+	background: #f2f2f2;
+	color: #555555;
+}
+.bottom2{
+	background: #f2f2f2;
+}
+.bottom2_big_box{
+	margin: 0 auto;
+	background: #f2f2f2;
+	border-bottom: 1px solid #970821;
+}
+.bottom3{
+	height: 70px;
+	background: #f2f2f2;
+	overflow: hidden;
+}
+.bottom3_big_box{
+	height: 70px;
+	background: #f2f2f2;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.bottom3_big_box_top{
+	height: 25px;
+	background: #f2f2f2;
+}
+.bottom3_big_box_top p{
+	display: block;
+	float: left;
+	font-size: 10px;
+	margin-right: 20px;
+	line-height: 25px;
+}
+.bottom3_big_box_top a{
+	display: block;
+	float: left;
+	width: 72px;
+	height: 16px;
+	border-right: 1px solid #d6d6d6;
+	font-size: 10px;
+	text-align: center;
+	line-height: 16px;
+	margin-top: 3px;
+}
+.bottom3_big_box_top a:last-child{
+	border-right: none;
+}
+.bottom3_big_box_top_img{
+	width: 16px;
+	height: 16px;
+	background: url('../img/china.png');
+	float: right;
+	margin-top: 4.5px;
+}
+.bottom3_big_box_top h3{
+	float: right;
+	display: block;
+	font-size: 10px;
+	padding-right: 1px;
+	margin-left: 6px;
+	line-height: 25px;
+}
+.bottom3_big_box_bottom{
+	height: 45px;
+	background: #f2f2f2;
+	overflow: hidden;
+}
+.bottom3_big_box_bottom p{
+	margin-top: 7px;
+	font-size: 10px;
+}
+.bottom4{
+	width: 100%;
+	height: 280px;
+	background: #f2f2f2;
+}
+.bottom4_bigbox{
+	width: 93%;
+	height: 259px;
+	background: #f2f2f2;
+	margin: 0 auto;
+	padding-top: 21px;
+}
+.bottom4_bigbox_Carlotta{
+	width: 100%;
+	height: 36px;
+	background: #f2f2f2;
+	border-bottom: 1px solid red;
+}
+.bottom4_bigbox_Carlotta h1{
+	display: block;
+	line-height: 36px;
+	float: left;
+}
+.bottom4_bigbox_Carlotta h2{
+	display: block;
+	line-height: 36px;
+	float: right;
+}
+.bottom5{
+	width: 100%;
+	height: 163px;
+	background: #f2f2f2;
+	overflow: hidden;
+}
+.bottom5_box1{
+	width: 93%;
+	margin: 0 auto;
+/* 	background: orange; */
+	margin-top: 20px;
+	line-height: 18px;
+}
+.bottom5_box2{
+	width: 93%;
+	height: 16px;
+	margin: 0 auto;
+/* 	background: yellow; */
+	margin-top: 19px;
+	line-height: 10px;	
+}
+.bottom5_box3{
+	width: 93%;
+	height: 12px;
+	margin: 0 auto;
+/* 	background: green; */
+	margin-top: 21px;
+	line-height: 12px;	
+}
+.bottom5_box4{
+	width: 93%;
+	height: 16px;
+	margin: 0 auto;
+/* 	background: blue; */
+	margin-top: 6px;
+	line-height: 10px;	
+}
+.bottom5_box5{
+	width: 93%;
+	height: 10px;
+	margin: 0 auto;
+/* 	background: #210058; */
+	margin-top: 13px;
+	line-height: 10px;
+}
+.bottom5_box4_smallbox{
+	width: 50px;
+	height: 16px;
+	padding-right: 10px;
+	border-right: 1px solid red;
+/* 	background: pink; */
+	float: left;
+	font-size: 10px;
+	line-height: 16px;
+	margin-left: 10px;
+}
+.bottom5_box4_smallbox:first-child{
+	margin-left: 0;
+}
+.bottom5_box4_smallbox:last-child{
+	padding-right: 0;
+	border-right: none;
+}
+@media screen and (min-width:1024px){
+		.bottom1{
+			width: 100%;
+			height: 324px;
+		}
+		.bottom1_big_box{
+			width: 980px;
+			height: 324px;
+		}
+		.bottom1_big_box li{
+			width: 20%;
+			height: 324px;
+		}
+		.bottom1_big_box li h1{
+			width: 100%;
+			height: 8.3%;
+			font-size: 11px;
+		}
+		.bottom1_big_box li a{
+			width: 100%;
+			height: 8.3%;
+		}
+		.bottom2{
+			height: 46px;
+		}
+		.bottom2_big_box{
+			width: 980px;
+			height: 45px;
+			line-height: 55px;
+			font-size: 11px;
+		}
+		.bottom3{
+			width: 100%;
+			height: 70px;
+			background: #f2f2f2;
+			overflow: hidden;
+		}
+		.bottom3_big_box{
+			width: 980px;
+			height: 70px;
+			background: #f2f2f2;
+			margin: 0 auto;
+			margin-top: 5px;
+		}
+		.bottom3_big_box_top{
+			width: 100%;
+			height: 25px;
+			background: #f2f2f2;
+		}
+		.bottom3_big_box_top p{
+			display: block;
+			float: left;
+			font-size: 10px;
+			margin-right: 20px;
+			line-height: 25px;
+		}
+		.bottom3_big_box_top a{
+			display: block;
+			float: left;
+			width: 72px;
+			height: 16px;
+			border-right: 1px solid #d6d6d6;
+			font-size: 10px;
+			text-align: center;
+			line-height: 16px;
+			margin-top: 3px;
+		}
+		.bottom3_big_box_top a:last-child{
+			border-right: none;
+		}
+		.bottom3_big_box_top_img{
+			width: 16px;
+			height: 16px;
+			background: url('../img/china.png');
+			float: right;
+			margin-top: 4.5px;
+		}
+		.bottom3_big_box_top h3{
+			float: right;
+			display: block;
+			font-size: 10px;
+			padding-right: 1px;
+			margin-left: 6px;
+			line-height: 25px;
+		}
+		.bottom3_big_box_bottom{
+			width: 980px;
+			height: 45px;
+			background: #f2f2f2;
+			overflow: hidden;
+		}
+		.bottom3_big_box_bottom p{
+			margin-top: 7px;
+			font-size: 10px;
+		}
+		.bottom4{
+			display: none;
+		}
+		.bottom5{
+			display: none;
+		}
+		.bottom6{
+			display: none;
+		}						
+}
+@media screen and (max-width:1024px){
+		.bottom1{
+			width: 100%;
+			height: 324px;
+		}
+		.bottom1_big_box{
+			width: 97%;
+			height: 324px;
+			margin-left: 1.5%;
+			margin-right: 1.5%;
+		}
+		.bottom1_big_box li{
+			width: 20%;
+			height: 324px;
+		}
+		.bottom1_big_box li h1{
+			width: 100%;
+			height: 8.3%;
+			font-size: 11px;
+		}
+		.bottom1_big_box li a{
+			width: 100%;
+			height: 8.3%;
+		}
+		.bottom2{
+			height: 46px;
+		}
+		.bottom2_big_box{
+			width: 97%;
+			height: 45px;
+			line-height: 55px;
+			font-size: 11px;
+		}
+		.bottom3{
+			width: 100%;
+			height: 70px;
+			background: #f2f2f2;
+			overflow: hidden;
+		}
+		.bottom3_big_box{
+			width: 97%;
+			height: 70px;
+			background: #f2f2f2;
+			margin: 0 auto;
+			margin-top: 5px;
+		}
+		.bottom3_big_box_top{
+			width: 100%;
+			height: 25px;
+			background: #f2f2f2;
+			margin: 0 auto;
+		}
+		.bottom3_big_box_top p{
+			display: block;
+			float: left;
+			font-size: 10px;
+			margin-right: 20px;
+			line-height: 25px;
+		}
+		.bottom3_big_box_top a{
+			display: block;
+			float: left;
+			width: 72px;
+			height: 16px;
+			border-right: 1px solid #d6d6d6;
+			font-size: 10px;
+			text-align: center;
+			line-height: 16px;
+			margin-top: 3px;
+		}
+		.bottom3_big_box_top a:last-child{
+			border-right: none;
+		}
+		.bottom3_big_box_top_img{
+			width: 16px;
+			height: 16px;
+			background: url('../img/china.png');
+			float: right;
+			margin-top: 4.5px;
+		}
+		.bottom3_big_box_top h3{
+			float: right;
+			display: block;
+			font-size: 10px;
+			padding-right: 1px;
+			margin-left: 6px;
+			line-height: 25px;
+		}
+		.bottom3_big_box_bottom{
+			width: 100%;
+			height: 45px;
+			background: #f2f2f2;
+			overflow: hidden;
+/* 			margin-left: 1.5%;
+			margin-right: 1.5%; */
+		}
+		.bottom3_big_box_bottom p{
+			margin-top: 7px;
+			font-size: 10px;
+		}
+		.bottom4{
+			display: none;
+		}
+		.bottom5{
+			display: none;
+		}
+		.bottom6{
+			display: none;
+		}							
+}
+@media screen and (max-width:768px){
+		.bottom1{
+			display: none;
+		}
+		.bottom2{
+			display: none;
+		}
+		.bottom3{
+			display: none;
+		}
+		.bottom4{
+			display: block;
+		}
+		.bottom5{
+			display: block;
+		}
+		.bottom6{
+			display: block;
+		}
+}
